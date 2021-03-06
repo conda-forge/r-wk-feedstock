@@ -1,4 +1,4 @@
-{% set version = "0.3.4" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wk_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wk/wk_{{ version }}.tar.gz
-  sha256: e960f3044c95988cb9b5a6041e094f24a8d0a6162131b73eb98b68c9a1c1ee63
+  sha256: 3c70aafe31c0ff0b1ab271bb4527ad381b03d335da0a7245d01591d4fcb1971a
 
 build:
   merge_build_host: true  # [win]
@@ -32,11 +32,11 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-rcpp
+    - r-cpp11
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-rcpp
+    - r-cpp11
 
 test:
   commands:
