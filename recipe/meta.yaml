@@ -32,11 +32,11 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-rcpp
+    - r-cpp11
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-rcpp
+    - r-cpp11
 
 test:
   commands:
