@@ -1,4 +1,4 @@
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wk_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wk/wk_{{ version }}.tar.gz
-  sha256: daa7351af0bd657740972016906c686f335b8fa922ba10250e5000ddc2bb8950
+  sha256: 71d500e0beaeed40501702adf214054d30278acb3171af6db4ae8dcdf5e7423a
 
 build:
   merge_build_host: true  # [win]
