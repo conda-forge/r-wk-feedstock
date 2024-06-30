@@ -1,6 +1,5 @@
 {% set version = "0.9.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-wk
@@ -13,8 +12,7 @@ source:
   sha256: b7a0af51c0e04175dc359d1fb0e852ac55097b4105d876b58d3cf995c0f2bf7b
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -24,7 +22,9 @@ requirements:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
     - r-cpp11                    # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
@@ -37,7 +37,6 @@ requirements:
     - r-cpp11
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-cpp11
 
 test:
