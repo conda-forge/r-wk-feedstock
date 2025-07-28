@@ -7,20 +7,24 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wk-feedstock/
 About r-wk
 ----------
 
-Home: https://paleolimbot.github.io/wk/, https://github.com/paleolimbot/wk
+Home: https://paleolimbot.github.io/wk/
 
 Package license: MIT
 
 Summary: Provides a minimal R and C++ API for parsing well-known binary and well-known text representation of geometries to and from R-native formats. Well-known binary is compact and fast to parse; well-known text is human-readable and is useful for writing tests. These formats are only useful in R if the information they contain can be accessed in R, for which high-performance functions are provided here.
+
+Development: https://github.com/paleolimbot/wk
 
 About r-wk
 ----------
 
-Home: https://paleolimbot.github.io/wk/, https://github.com/paleolimbot/wk
+Home: https://paleolimbot.github.io/wk/
 
 Package license: MIT
 
 Summary: Provides a minimal R and C++ API for parsing well-known binary and well-known text representation of geometries to and from R-native formats. Well-known binary is compact and fast to parse; well-known text is human-readable and is useful for writing tests. These formats are only useful in R if the information they contain can be accessed in R, for which high-performance functions are provided here.
+
+Development: https://github.com/paleolimbot/wk
 
 Current build status
 ====================
