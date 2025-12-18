@@ -1,4 +1,4 @@
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wk_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wk/wk_{{ version }}.tar.gz
-  sha256: b973dd5fa9aed94efc7ea4027146e804ba54df818a71278d6a5b7df0ae9e348b
+  sha256: b720282890f8d322ff8217bd857bab8f5549343ea2a635a3c2ada63ce1206aed
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
